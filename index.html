@@ -1,51 +1,14 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BUDAP FINANCE — Курсы НБУ</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: #f5f7fa;
-        color: #172b4d;
-        font-family: Arial, sans-serif;
-      }
-      main { width: min(760px, calc(100% - 40px)); padding: 48px 0; }
-      h1 { font-size: clamp(2rem, 6vw, 3.5rem); margin: 0 0 16px; }
-      h2 { font-size: 1.4rem; }
-      .rates { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 24px 0; }
-      article { background: white; padding: 24px; border: 1px solid #dce3ed; border-radius: 16px; }
-      article h3 { margin: 0 0 16px; font-size: 1rem; }
-      .rate { font-size: 2rem; font-weight: bold; margin: 0; }
-      p { line-height: 1.6; }
-      a { color: #1459b8; }
-      .note { color: #52627a; }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>BUDAP FINANCE</h1>
-      <h2>Официальные курсы НБУ</h2>
-      <p>Курс на <time datetime="2026-09-22">22 сентября 2026 года</time></p>
-      <section class="rates" aria-label="Курсы валют к гривне">
-        <article>
-          <h3>USD · Доллар США</h3>
-          <p class="rate">44,7071 грн</p>
-          <p>за 1 доллар США</p>
-        </article>
-        <article>
-          <h3>EUR · Евро</h3>
-          <p class="rate">51,3671 грн</p>
-          <p>за 1 евро</p>
-        </article>
-      </section>
-      <p>Источник: <a href="https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=20260922&amp;json">официальный API Национального банка Украины</a>.</p>
-      <p class="note">Проверено: <time datetime="2026-09-22T16:23:29+03:00">22.09.2026 в 16:23 (Киев)</time>.<br>Это официальный курс НБУ. Курсы покупки и продажи в банках могут отличаться.</p>
-      <p class="note">Данные обновлены по запросу. Ежедневное автоматическое обновление пока не настроено.</p>
-    </main>
-  </body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Budap Finance Control</title><link rel="stylesheet" href="assets/style.css"><script src="assets/app.js" defer></script></head>
+<body>
+<a class="skip" href="#overview">К содержимому</a>
+<aside class="sidebar"><a class="brand" href="#overview">BUDAP<small>FINANCE CONTROL</small></a><nav aria-label="Разделы панели"><a href="#overview">01 · Обзор</a><a href="#strategy">02 · Стратегия</a><a href="#funding">03 · Финансирование</a><a href="#preparation">04 · Подготовка</a><a href="#actions">05 · План действий</a><a href="#history">06 · Обновления</a></nav><p class="sidebar-note">Публичная версия · v1<br>Без персональных данных</p></aside>
+<main><header><span>Финансирование развития бизнеса</span><span class="pill">Обновлено 22.09.2026</span></header>
+<section id="overview"><p class="eyebrow">BUDAP / РАБОЧАЯ ПАНЕЛЬ</p><h1>От возможностей<br>к следующему шагу.</h1><p class="intro">Гранты, кредиты и подготовка к финансированию — в одном месте.</p><div class="notice">Публичная первая версия. Программы содержат проверенные выдержки и вопросы для уточнения. Реальные профили и документы бизнеса здесь не размещены.</div><div class="metrics"><article><span>В фокусе</span><strong>3 программы</strong><small>2 гранта · 1 кредитная программа</small></article><article><span>Документы · демо</span><strong id="readiness">0%</strong><small id="ready-count">0 из 6 готово</small></article><article><span>Полная ставка ≤10%</span><strong>Не подтверждена</strong><small>Нужны предложения банков</small></article></div><div class="next"><div><p class="eyebrow">СЛЕДУЮЩИЙ ШАГ</p><h2>Определить состав проекта</h2><p>Разделить оборудование и оборотные расходы, затем сопоставить их с условиями программ.</p></div><a class="button" href="#actions">Открыть план ↗</a></div><div class="currency"><div><b>Курсы НБУ</b><small>На 22.09.2026 · проверено 16:23, Киев</small></div><p>USD <strong>44,7071</strong> грн</p><p>EUR <strong>51,3671</strong> грн</p><a href="https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?date=20260922&amp;json">Источник ↗</a></div><p class="muted">Курс за 1 единицу валюты. Официальный курс отличается от банковских курсов покупки и продажи. Автообновление не настроено.</p></section>
+<section id="strategy"><p class="eyebrow">01 / НАПРАВЛЕНИЯ</p><h2>Две стратегии подготовки</h2><div class="two"><article class="card"><span class="pill">Действующий бизнес</span><h3>Развитие производства</h3><p>Отдельно оценить оборудование и оборотный капитал. Подготовить финансовые подтверждения, основания использования помещения и предложения поставщиков.</p></article><article class="card"><span class="pill">Новый бизнес</span><h3>Запуск деятельности</h3><p>Проверить стартовые гранты, подготовить бизнес-план и реалистичный план найма. Самостоятельность операций должна подтверждаться фактически.</p></article></div></section>
+<section id="funding"><p class="eyebrow">02 / ВОЗМОЖНОСТИ</p><h2>Программы в фокусе</h2><p class="muted">Официальные условия и предварительная оценка показаны отдельно. Неизвестные параметры не заменяются предположениями.</p><div class="filters" role="group" aria-label="Фильтр программ"><button data-filter="all" aria-pressed="true">Все</button><button data-filter="grant" aria-pressed="false">Гранты</button><button data-filter="credit" aria-pressed="false">Кредиты</button></div><div id="programs" aria-live="polite">Загружаем программы…</div><noscript>Для каталога и списка документов включите JavaScript.</noscript><p class="muted">Следующие направления исследования: энергонезависимость, региональные компенсации и международные программы. Их условия пока не проверены.</p></section>
+<section id="preparation"><p class="eyebrow">03 / ГОТОВНОСТЬ</p><h2>Подготовка документов</h2><p>Демонстрационный список. Статусы сохраняются только в этом браузере, не отправляются на GitHub и не переносятся на другой компьютер или телефон.</p><p class="muted">Процент = число документов «Готово» / 6. Это не оценка шансов на финансирование и не фактическая готовность Budap.</p><progress id="progress" max="6" value="0" aria-label="Готовые документы"></progress><div id="documents" class="card"></div><p id="storage-message" class="muted" role="status"></p></section>
+<section id="actions"><p class="eyebrow">04 / ПОШАГОВО</p><h2>План действий</h2><ol class="steps"><li><b>Определить расходы</b><p>Отдельные перечни оборудования, сырья и других оборотных затрат.</p></li><li><b>Проверить основания деятельности</b><p>Регистрация, КВЭД, помещение и требования к заявителю.</p></li><li><b>Собрать предложения</b><p>Предложения поставщиков и полные условия банков, включая комиссии и обеспечение.</p></li><li><b>Выбрать программу</b><p>Сопоставить взнос, найм, допустимые расходы и актуальный срок подачи.</p></li><li><b>Подготовить заявку</b><p>Бизнес-план и комплект документов по действующей форме выбранной программы.</p></li></ol></section>
+<section id="history"><p class="eyebrow">05 / ИСТОРИЯ</p><h2>Что обновилось</h2><div class="card"><p><b>22.09.2026 · Первая версия панели</b><br>Три программы с источниками, стратегии, демо-подготовка и план действий.</p><p><b>22.09.2026 · Курсы НБУ</b><br>Опубликованы USD и EUR с датой проверки.</p><p><b>22.09.2026 · Проверка публикации</b><br>Пройдены тесты TEST 1 → TEST 2 через GitHub Pages.</p></div><p class="muted">Мониторинг по расписанию ещё не настроен. Обновления выполняются по запросу.</p></section><footer>BUDAP FINANCE CONTROL · Публичная версия · 2026</footer></main>
+</body></html>
